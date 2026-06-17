@@ -327,3 +327,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Kiến trúc tài khoản: Hệ thống sử dụng mô hình kế thừa từ lớp cơ sở trừu tượng (BaseAccount) 
+# kết hợp lớp bổ trợ độc lập (Mixin) để tối ưu tái 
+# sử dụng mã nguồn và tạo ra tài khoản tích hợp (HybridAccount)
+
+# Cơ chế MRO (C3 Linearization): Quy định thứ tự tìm kiếm phương thức từ trái qua phải, từ dưới 
+# lên trên nhằm giải quyết xung đột "bài toán Kim cương" trong đa kế thừa khi gọi super()
+
+# Cơ chế Duck Typing: Cho phép hệ thống tích hợp vô số cổng thanh toán mới mà không cần sửa đổi mã nguồn cốt lõi, 
+# chỉ cần đối tượng truyền vào sở hữu đúng tên phương thức yêu cầu (execute_pay).
